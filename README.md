@@ -91,7 +91,8 @@ Response:
         "post": 0
     }
 
-# Использованные технологии:
+### Использованные технологии:
+```
 Django==3.2.16
 djangorestframework==3.12.4
 djangorestframework-simplejwt==4.7.2
@@ -99,6 +100,7 @@ Pillow==9.3.0
 PyJWT==2.1.0
 djangorestframework-simplejwt==4.7.2
 djoser==2.1.0
+```
 
-# Автор:
+### Автор:
 Иван Шелегов
