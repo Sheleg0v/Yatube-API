@@ -58,6 +58,7 @@ python manage.py runserver
 GET /api/v1/posts/
 
 Response:
+```
     {
         "count": 123,
         "next": "http://api.example.org/accounts/?offset=400&limit=100",
@@ -73,16 +74,20 @@ Response:
             }
         ]
     }
+```
 
 Добавление комментария
 POST /api/v1/posts/{post_id}/comments/
 
 Request:
+```
     {
         "text": "string"
     }
+```
 
 Response:
+```
     {
         "id": 0,
         "author": "string",
@@ -90,6 +95,7 @@ Response:
         "created": "2019-08-24T14:15:22Z",
         "post": 0
     }
+```
 
 ### Использованные технологии:
 ```
