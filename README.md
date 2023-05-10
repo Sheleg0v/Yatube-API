@@ -1,16 +1,24 @@
 # Yatube_api:
 
-Yatube - это проект где каждый может поделиться постом с другими людьми.
+Yatube is a project where everyone can share a post with other people.
 
-Посты могут содержать текст и картинки. 
-Посты можно комментировать.
-Также посты могут принадлежать какой-то группе.
-Любой человек может подписаться на интересующего его автора.
+Posts can contain text and pictures. 
+Posts can be commented.
+Posts may belong to some group.
+Anyone can subscribe to the author they are interested in.
+
+### Stack:
+- Django 3.2.16
+- djangorestframework 3.12.4
+- djangorestframework-simplejwt 4.7.2
+- Pillow 9.3.0
+- PyJWT 2.1.0
+- djoser 2.1.0
 
 
-## Как запустить проект:
+## Project launch:
 
-Клонировать репозиторий и перейти в него в командной строке:
+Clone the repository and change directory on the command line:
 
 ```
 git clone git@github.com:Sheleg0v/api_final_yatube.git
@@ -20,7 +28,7 @@ git clone git@github.com:Sheleg0v/api_final_yatube.git
 cd yatube_api
 ```
 
-Cоздать и активировать виртуальное окружение:
+Create and activate a virtual environment:
 
 ```
 python -m venv venv
@@ -30,7 +38,7 @@ python -m venv venv
 source venv/Scripts/activate
 ```
 
-Установить зависимости из файла requirements.txt:
+Install dependencies from a file requirements.txt:
 
 ```
 python -m pip install --upgrade pip
@@ -40,21 +48,21 @@ python -m pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
-Выполнить миграции:
+Apply migrations:
 
 ```
 python manage.py migrate
 ```
 
-Запустить проект:
+Launch project:
 
 ```
 python manage.py runserver
 ```
 
-## Примеры запросов к api:
+## Examples of api requests:
 
-Получение публикаций
+Get posts
 GET /api/v1/posts/
 
 Response:
@@ -76,7 +84,7 @@ Response:
     }
 ```
 
-Добавление комментария
+Add comment
 POST /api/v1/posts/{post_id}/comments/
 
 Request:
@@ -97,16 +105,5 @@ Response:
     }
 ```
 
-### Использованные технологии:
-```
-Django==3.2.16
-djangorestframework==3.12.4
-djangorestframework-simplejwt==4.7.2
-Pillow==9.3.0
-PyJWT==2.1.0
-djangorestframework-simplejwt==4.7.2
-djoser==2.1.0
-```
-
-### Автор:
-Иван Шелегов
+### Author:
+- Иван Шелегов
