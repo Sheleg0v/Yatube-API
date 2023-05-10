@@ -63,7 +63,9 @@ python manage.py runserver
 ## Examples of api requests:
 
 Get posts
+```
 GET /api/v1/posts/
+```
 
 Response:
 ```
@@ -85,7 +87,9 @@ Response:
 ```
 
 Add comment
+```
 POST /api/v1/posts/{post_id}/comments/
+```
 
 Request:
 ```
@@ -106,4 +110,4 @@ Response:
 ```
 
 ### Author:
-- Иван Шелегов
+- https://github.com/Sheleg0v - Ivan Shelegov
